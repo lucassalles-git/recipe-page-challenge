@@ -22,8 +22,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solução para página de receitas](https://github.com/lucassalles-git/recipe-page-challenge/blob/main/README.md)
+- Live Site URL: [Recipe Page Challenge](https://lucassalles-git.github.io/recipe-page-challenge/)
 
 ## My process
 
@@ -67,6 +67,5 @@ Use of the :not(.final) pseudo-class, which in the example selects all elements 
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@lucassalles-git](https://www.frontendmentor.io/profile/lucassalles-git)
 - GitHub - [lucassalles-git](https://github.com/lucassalles-git)
