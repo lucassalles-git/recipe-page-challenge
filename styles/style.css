@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+:root {
+  /*colors*/
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+
+  /*fonts*/
+  --font-base: "Young Serif", serif;
+  --font-secundary: "Outfit", sans-serif;
+
+  --paragraph-and-list: 1rem;
+
+  /*espaçamentos*/
+  --padding: 0.5rem 0 0 1.2rem;
+  --padding-left: 0.9rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 5rem 0;
+  background-color: var(--stone-100);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.container-main {
+  width: clamp(20rem, 60vw, 35rem);
+  padding: 2rem;
+  border-radius: 1.6rem;
+  background-color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.container-main img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.7rem;
+}
+
+.container-main h1 {
+  font-family: var(--font-base);
+  font-weight: 400;
+}
+
+.container-main p,
+li {
+  font-size: var(--paragraph-and-list);
+  font-size: 0.79rem;
+}
+
+.preparation {
+  padding: 1.5rem;
+  border-radius: 0.7rem;
+  background-color: var(--rose-50);
+  line-height: 1.6rem;
+}
+
+.preparation ul,
+.ingredients ul,
+.instructions ol {
+  padding: var(--padding);
+}
+
+.preparation li,
+.ingredients li,
+.instructions li {
+  padding-left: var(--padding-left);
+}
+
+.preparation li::marker {
+  /*Estiliza o ponto da li*/
+  color: var(--rose-800);
+}
+
+.container-main p,
+li,
+td {
+  font-family: var(--font-secundary);
+  color: var(--stone-600);
+}
+
+.title-outfit {
+  font-family: var(--font-secundary);
+  color: var(--rose-800);
+  font-size: 1.1rem;
+}
+
+.title-young {
+  font-family: var(--font-base);
+  color: var(--brown-800);
+  font-weight: 400;
+}
+
+.ingredients {
+  padding: 1.5rem 0;
+  line-height: 1.6rem;
+  border-bottom: 1px solid var(--stone-150);
+}
+
+.ingredients li::marker {
+  color: var(--brown-800);
+}
+
+.instructions {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--stone-150);
+}
+
+.instructions li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.instructions li::marker {
+  color: var(--brown-800);
+}
+
+.nutrition h2,
+p {
+  margin-bottom: 1rem;
+}
+
+.nutrition table {
+  width: 100%;
+  font-size: 0.7rem;
+  border-collapse: collapse; /*Unir as bordas das td*/
+}
+
+.nutrition td:not(.final) {
+  /*Estiliza todos menos o que tem a class .final*/
+  border-bottom: 1px solid var(--stone-150);
+}
+
+.nutrition td {
+  padding: 0.5rem 0 0.5rem 1.5rem;
+}
+
+.grams {
+  font-weight: 700;
+  color: var(--brown-800);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--stone-900);
+}
+.attribution a {
+  color: var(--brown-800);
+}
+
+@media (max-width: 27.5rem) {
+  body {
+    margin: 0;
+  }
+
+  .container-main {
+    border-radius: 0;
+    width: 100vw;
+  }
+
+  .container-main img {
+    margin: -2rem -2rem 0 -2rem; /*Ocupa 100% do container ignorando o padding*/
+    width: calc(100% + 4rem); /*Calculo contando o padding aos lados*/
+    border-radius: 0;
+  }
+}
