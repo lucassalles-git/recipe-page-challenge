@@ -91,9 +91,9 @@ li {
   color: var(--rose-800);
 }
 
-.container-main p,
-li,
-td {
+.container-main td,
+p,
+li {
   font-family: var(--font-secundary);
   color: var(--stone-600);
 }
@@ -159,7 +159,7 @@ p {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.8rem;
   text-align: center;
   color: var(--stone-900);
 }
